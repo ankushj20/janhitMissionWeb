@@ -6,7 +6,7 @@ const News = () => {
   useEffect(() => {
     const fetchNews = async () => {
       try {
-        const response = await fetch("http://localhost:5000/api/news");
+        const response = await fetch("https://janhitmissionwebbackend.onrender.com/api/news");
         const data = await response.json();
         console.log("Fetched News Data:", data);
         setNewsData(data);

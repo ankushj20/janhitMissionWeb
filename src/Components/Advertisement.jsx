@@ -6,7 +6,7 @@ const Advertisement = () => {
   useEffect(() => {
     const fetchAdvertisement = async () => {
       try {
-        const response = await fetch("http://localhost:5000/api/advertisements");
+        const response = await fetch("https://janhitmissionwebbackend.onrender.com/api/advertisements");
         const data = await response.json();
         console.log("Fetched Advertisement Data:", data); // ✅ Check karo API data sahi aa raha hai?
         if (data.length > 0) {

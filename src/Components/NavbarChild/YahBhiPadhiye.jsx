@@ -6,7 +6,7 @@ const YahBhiPadhiye = () => {
   useEffect(() => {
     const fetchYahBhiPadhiyeNews = async () => {
       try {
-        const response = await fetch("http://localhost:5000/api/news?category=यह भी पढिये"); 
+        const response = await fetch("https://janhitmissionwebbackend.onrender.com/api/news?category=यह भी पढिये"); 
         const data = await response.json();
         setNewsData(data);
       } catch (error) {

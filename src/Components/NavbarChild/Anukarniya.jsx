@@ -6,7 +6,7 @@ const Anukarniya = () => {
   useEffect(() => {
     const fetchAnukarniyaNews = async () => {
       try {
-        const response = await fetch("http://localhost:5000/api/news?category=अनुकर्णिया"); // ✅ Query param filter
+        const response = await fetch("https://janhitmissionwebbackend.onrender.com/api/news?category=अनुकर्णिया"); // ✅ Query param filter
         const data = await response.json();
         setNewsData(data);
       } catch (error) {
