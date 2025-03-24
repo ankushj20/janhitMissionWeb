@@ -6,7 +6,7 @@ const CourtKachheri = () => {
   useEffect(() => {
     const fetchCourtKachheriNews = async () => {
       try {
-        const response = await fetch("https://janhitmissionwebbackend.onrender.com/api/news?category=कोर्ट कचेरी"); // ✅ Query param filter
+        const response = await fetch(`${process.env.REACT_APP_BASE_URL}/api/news?category=कोर्ट कचेरी`); 
         const data = await response.json();
         setNewsData(data);
       } catch (error) {

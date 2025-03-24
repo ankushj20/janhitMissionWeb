@@ -6,7 +6,7 @@ const ApnaMP = () => {
   useEffect(() => {
     const fetchApnaMPNews = async () => {
       try {
-        const response = await fetch("https://janhitmissionwebbackend.onrender.com/api/news?category=अपना एमपी"); // ✅ Query param filter
+        const response = await fetch(`${process.env.REACT_APP_BASE_URL}/api/news?category=अपना एमपी`); // ✅ Query param filter
         const data = await response.json();
         setNewsData(data);
       } catch (error) {
