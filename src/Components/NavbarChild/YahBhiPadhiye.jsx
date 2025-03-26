@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import BASE_URL from "../utils/config"; // ✅ Base URL import kiya
 
 const YahBhiPadhiye = () => {
   const [newsData, setNewsData] = useState([]); 
@@ -6,7 +7,7 @@ const YahBhiPadhiye = () => {
   useEffect(() => {
     const fetchYahBhiPadhiyeNews = async () => {
       try {
-        const response = await fetch(`${process.env.REACT_APP_BASE_URL}/api/news?category=यह भी पढिये`); 
+        const response = await fetch(`${BASE_URL}/api/news?category=यह भी पढिये`); 
         const data = await response.json();
         setNewsData(data);
       } catch (error) {

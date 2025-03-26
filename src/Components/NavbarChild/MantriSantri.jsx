@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import BASE_URL from "../utils/config"; // ✅ Base URL import kiya
 
 const MantriSantri = () => {
   const [newsData, setNewsData] = useState([]); 
@@ -6,7 +7,7 @@ const MantriSantri = () => {
   useEffect(() => {
     const fetchMantriSantriNews = async () => {
       try {
-        const response = await fetch(`${process.env.REACT_APP_BASE_URL}/api/news?category=मंत्री संतरी`); // ✅ Query param filter
+        const response = await fetch(`${BASE_URL}/api/news?category=मंत्री संतरी`); // ✅ Query param filter
         const data = await response.json();
         setNewsData(data);
       } catch (error) {

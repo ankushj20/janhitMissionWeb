@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import BASE_URL from "./utils/config"; // ✅ Base URL import kiya
 
 const Advertisement = () => {
   const [adImage, setAdImage] = useState(""); 
@@ -6,7 +7,7 @@ const Advertisement = () => {
   useEffect(() => {
     const fetchAdvertisement = async () => {
       try {
-        const response = await fetch(`${process.env.REACT_APP_BASE_URL}/api/advertisements`);
+        const response = await fetch(`${BASE_URL}/api/advertisements`);
         const data = await response.json();
         console.log("Fetched Advertisement Data:", data); // ✅ Check karo API data sahi aa raha hai?
         if (data.length > 0) {
