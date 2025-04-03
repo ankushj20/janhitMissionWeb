@@ -25,9 +25,9 @@ const Advertisement = () => {
   
 
   return (
-    <div className="w-full h-full bg-cyan-500">
+    <div className="w-full h-full bg-white">
       {adImage ? (
-        <img className="w-full h-full object-cover" src={adImage} alt="Advertisement" />
+        <img className="w-full h-full object-contain" src={adImage} alt="Advertisement" />
       ) : (
         <p>Loading Advertisement...</p>
       )}
