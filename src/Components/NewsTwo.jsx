@@ -26,8 +26,8 @@ const NewsTwo = () => {
     <div className="w-full  bg-slate-100">
       {selectedNews.length > 0 ? (
         selectedNews.map((news) => (
-          <div key={news._id} className="w-full mb-5 px-5">
-            <h3 className="text-2xl font-bold text-justify">{news.title}</h3>
+          <div key={news._id} className="w-full mb-5 lg:px-5">
+            <h3 className="text-xm lg:text-2xl font-bold text-justify">{news.title}</h3>
             <div className="w-full   py-2">
               <img
                 className="w-full h-fit object-cover bg-cyan-400"

@@ -3,7 +3,7 @@
 
   const MainNews = () => {
     return (
-      <div className='w-3/4  px-[3vw] py-[1vh]  text-justify'>
+      <div className='w-3/4 sm:p-0  lg:px-[3vw] py-[1vh]  text-justify'>
           <News/>
       </div>
     )

@@ -16,7 +16,7 @@ import Footer from './Footer';
 const App = () => {
   return (
     <Router>
-      <div className="w-100vw bg-white font-[gilroy]">
+      <div className="w-[100vw] bg-white font-[gilroy]">
         <Header />
         <Navbar />
         <Routes>

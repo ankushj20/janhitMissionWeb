@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+/* index.css ya main.css me */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
 
 .scrolling-text-container {
     display: flex;
@@ -13,7 +23,17 @@
     display: flex;
     animation: marquee 100s linear infinite;
   }
-  
+ 
+  /* .newspaper-title {
+  width: 100%;
+  text-align: justify;
+  text-justify: inter-word;
+  text-align-last: justify;  
+  letter-spacing: 0.02em;
+  line-height: 1.2;
+  margin: 0 auto;
+} */
+
   @keyframes marquee {
     from {
       transform: translateX(100%);
